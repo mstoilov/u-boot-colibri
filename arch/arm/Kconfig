@@ -378,6 +378,9 @@ config TARGET_UDOO
 config TARGET_WANDBOARD
 	bool "Support wandboard"
 
+config TARGET_COLIBRI
+	bool "Support colibri"
+
 config TARGET_TITANIUM
 	bool "Support titanium"
 
@@ -669,6 +672,7 @@ source "board/siemens/draco/Kconfig"
 source "board/siemens/pxm2/Kconfig"
 source "board/siemens/rut/Kconfig"
 source "board/siemens/taurus/Kconfig"
+source "board/sigmadrone/colibri/Kconfig"
 source "board/silica/pengwyn/Kconfig"
 source "board/solidrun/hummingboard/Kconfig"
 source "board/spear/spear300/Kconfig"
