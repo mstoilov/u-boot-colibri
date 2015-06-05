@@ -116,9 +116,9 @@
 #endif
 
 #if defined(CONFIG_MX6DL) || defined(CONFIG_MX6S)
-#define CONFIG_DEFAULT_FDT_FILE		"imx6dl-wandboard.dtb"
+#define CONFIG_DEFAULT_FDT_FILE		"imx6dl-colibri.dtb"
 #elif defined(CONFIG_MX6Q)
-#define CONFIG_DEFAULT_FDT_FILE		"imx6q-wandboard.dtb"
+#define CONFIG_DEFAULT_FDT_FILE		"imx6q-colibri.dtb"
 #endif
 
 #define CONFIG_EXTRA_ENV_SETTINGS \
