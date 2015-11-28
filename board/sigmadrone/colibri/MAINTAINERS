@@ -1,8 +1,6 @@
 WANDBOARD BOARD
-M:	Fabio Estevam <fabio.estevam@freescale.com>
+M:	Martin Stoilov <martin@sigmadrone.org>
 S:	Maintained
-F:	board/wandboard/
-F:	include/configs/wandboard.h
-F:	configs/wandboard_dl_defconfig
-F:	configs/wandboard_quad_defconfig
-F:	configs/wandboard_solo_defconfig
+F:	board/sigmadrone/colibri
+F:	include/configs/colibri.h
+F:	configs/colibri_defconfig
