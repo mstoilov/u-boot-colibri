@@ -25,7 +25,7 @@
 #define CONFIG_BOARD_LATE_INIT
 
 #define CONFIG_MXC_UART
-#define CONFIG_MXC_UART_BASE		UART1_BASE
+#define CONFIG_MXC_UART_BASE		UART2_BASE
 
 /* Command definition */
 #define CONFIG_CMD_BMODE
@@ -90,7 +90,7 @@
 #define CONFIG_EXTRA_ENV_SETTINGS \
 	"script=boot.scr\0" \
 	"image=zImage\0" \
-	"console=ttymxc0\0" \
+	"console=ttymxc1\0" \
 	"splashpos=m,m\0" \
 	"fdtfile=undefined\0" \
 	"fdt_high=0xffffffff\0" \
@@ -190,9 +190,9 @@
 		"fi;\0" \
 	"findfdt="\
 		"if test $board_rev = MX6Q ; then " \
-			"setenv fdtfile imx6q-wandboard.dtb; fi; " \
+			"setenv fdtfile imx6q-colibri.dtb; fi; " \
 		"if test $board_rev = MX6DL ; then " \
-			"setenv fdtfile imx6dl-wandboard.dtb; fi; " \
+			"setenv fdtfile imx6dl-colibri.dtb; fi; " \
 		"if test $fdtfile = undefined; then " \
 			"echo WARNING: Could not determine dtb to use; fi; \0" \
 

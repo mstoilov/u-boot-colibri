@@ -64,6 +64,11 @@ static iomux_v3_cfg_t const uart1_pads[] = {
 	IOMUX_PADS(PAD_CSI0_DAT11__UART1_RX_DATA | MUX_PAD_CTRL(UART_PAD_CTRL)),
 };
 
+static iomux_v3_cfg_t const uart2_pads[] = {
+		IOMUX_PADS(PAD_SD4_DAT7__UART2_TX_DATA | MUX_PAD_CTRL(UART_PAD_CTRL)),
+		IOMUX_PADS(PAD_SD4_DAT4__UART2_RX_DATA | MUX_PAD_CTRL(UART_PAD_CTRL)),
+};
+
 static iomux_v3_cfg_t const usdhc1_pads[] = {
 	IOMUX_PADS(PAD_SD1_CLK__SD1_CLK    | MUX_PAD_CTRL(USDHC_PAD_CTRL)),
 	IOMUX_PADS(PAD_SD1_CMD__SD1_CMD    | MUX_PAD_CTRL(USDHC_PAD_CTRL)),
@@ -113,6 +118,7 @@ static iomux_v3_cfg_t const rev_detection_pad[] = {
 static void setup_iomux_uart(void)
 {
 	SETUP_IOMUX_PADS(uart1_pads);
+	SETUP_IOMUX_PADS(uart2_pads);
 }
 
 static void setup_iomux_enet(void)
