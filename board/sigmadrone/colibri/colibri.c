@@ -118,7 +118,6 @@ static iomux_v3_cfg_t const rev_detection_pad[] = {
 static void setup_iomux_uart(void)
 {
 	SETUP_IOMUX_PADS(uart1_pads);
-	SETUP_IOMUX_PADS(uart2_pads);
 }
 
 static void setup_iomux_enet(void)
