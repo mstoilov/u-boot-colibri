@@ -1,0 +1,6 @@
+WANDBOARD BOARD
+M:	Martin Stoilov <martin@sigmadrone.org>
+S:	Maintained
+F:	board/sigmadrone/colibri
+F:	include/configs/colibri.h
+F:	configs/colibri_defconfig

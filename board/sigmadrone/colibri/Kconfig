@@ -1,0 +1,12 @@
+if TARGET_COLIBRI
+
+config SYS_BOARD
+	default "colibri"
+
+config SYS_VENDOR
+       default "sigmadrone"
+
+config SYS_CONFIG_NAME
+	default "colibri"
+
+endif
